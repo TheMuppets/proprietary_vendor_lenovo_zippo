@@ -301,7 +301,6 @@ PRODUCT_PACKAGES += \
     libdualcam_video_optical_zoom \
     libgf_hal \
     libgnustl_shared \
-    libmegface \
     libmegskeleton \
     libmpbase \
     libsensorcal \
