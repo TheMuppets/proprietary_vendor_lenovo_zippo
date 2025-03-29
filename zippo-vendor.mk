@@ -266,7 +266,6 @@ PRODUCT_PACKAGES += \
     com.qti.chi.override \
     sensors.hal.tof \
     vendor.qti.hardware.fm@1.0-impl \
-    vendor.qti.hardware.sensorscalibrate@1.0-impl \
     libarcsoft_dualcam_refocus \
     libcamera_nn_stub \
     libcamxfdalgov7 \
@@ -280,23 +279,12 @@ PRODUCT_PACKAGES += \
     libdualcam_optical_zoom_control \
     libdualcam_video_optical_zoom \
     libmpbase \
-    libsensorcal \
-    libsensorslog \
     libsns_device_mode_stub \
-    libsns_fastRPC_util \
-    libsns_low_lat_stream_stub \
-    libsns_registry_skel \
-    libsnsapi \
-    libsnsdiaglog \
-    libssc \
-    libssc_default_listener \
     libswregistrationalgo \
     libvl53l1_daemon \
     libwatermarkutils \
-    sensors.ssc \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.fingerprint@1.0 \
-    vendor.qti.hardware.sensorscalibrate@1.0 \
     vendor.qti.hardware.audiohalext@1.0-impl \
     liba2dpoffload \
     libacdb-fts \
@@ -319,6 +307,7 @@ PRODUCT_PACKAGES += \
     com.megvii.node.previewbeautyX \
     com.pandora.node.watermark \
     fingerprint.goodix_fod.msmnile \
+    vendor.qti.hardware.sensorscalibrate@1.0-impl \
     libMegviiBeautyBody \
     libSNPE \
     libSNPE_G \
@@ -327,6 +316,8 @@ PRODUCT_PACKAGES += \
     libgnustl_shared \
     libmegface \
     libmegskeleton \
+    libsensorcal \
+    libsensorslog \
     libsnpe_adsp \
     libsnpe_dsp_domains \
     libsnpe_dsp_domains_skel \
@@ -336,9 +327,18 @@ PRODUCT_PACKAGES += \
     libsnpe_dsp_v65_domains_v2_skel \
     libsnpe_dsp_v66_domains_v2_skel \
     libsnpe_loader \
+    libsns_fastRPC_util \
+    libsns_low_lat_stream_stub \
+    libsns_registry_skel \
+    libsnsapi \
+    libsnsdiaglog \
+    libssc \
+    libssc_default_listener \
     libsymphony-cpu \
     libsymphonypower \
     libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
+    sensors.ssc \
+    vendor.qti.hardware.sensorscalibrate@1.0 \
     fm_helium \
     libfm-hci \
     vendor.qti.hardware.fm@1.0 \

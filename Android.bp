@@ -3040,60 +3040,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.sensorscalibrate@1.0-impl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhidltransport",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libhardware",
-                "libbase",
-                "vendor.qti.hardware.sensorscalibrate@1.0",
-                "libsensorcal",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhidltransport",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libhardware",
-                "libbase",
-                "vendor.qti.hardware.sensorscalibrate@1.0",
-                "libsensorcal",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libarcsoft_dualcam_refocus",
     owner: "lenovo",
     strip: {
@@ -3611,92 +3557,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsensorcal",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libsensorcal.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
-                "liblog",
-                "libssc",
-                "libutils",
-                "libcutils",
-                "libsensorslog",
-                "libsnsapi",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsensorcal.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
-                "liblog",
-                "libssc",
-                "libutils",
-                "libcutils",
-                "libsensorslog",
-                "libsnsapi",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsensorslog",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libsensorslog.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsensorslog.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libsns_device_mode_stub",
     owner: "lenovo",
     strip: {
@@ -3729,321 +3589,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsns_fastRPC_util",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libsns_fastRPC_util.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsns_fastRPC_util.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsns_low_lat_stream_stub",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libsns_low_lat_stream_stub.so",
-            ],
-            shared_libs: [
-                "libsns_fastRPC_util",
-                "liblog",
-                "libc",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsns_low_lat_stream_stub.so",
-            ],
-            shared_libs: [
-                "libsns_fastRPC_util",
-                "liblog",
-                "libc",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsns_registry_skel",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libsns_registry_skel.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsns_registry_skel.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsnsapi",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libsnsapi.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
-                "libcutils",
-                "libutils",
-                "libqmi_common_so",
-                "libqmi_cci",
-                "libqmi_encdec",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsnsapi.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
-                "libcutils",
-                "libutils",
-                "libqmi_common_so",
-                "libqmi_cci",
-                "libqmi_encdec",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsnsdiaglog",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libsnsdiaglog.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
-                "liblog",
-                "libdiag",
-                "libsensorslog",
-                "libutils",
-                "libcutils",
-                "libssc",
-                "libsnsapi",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsnsdiaglog.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
-                "liblog",
-                "libdiag",
-                "libsensorslog",
-                "libutils",
-                "libcutils",
-                "libssc",
-                "libsnsapi",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libssc",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libssc.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
-                "liblog",
-                "libsensorslog",
-                "libcutils",
-                "libutils",
-                "libqmi_common_so",
-                "libqmi_cci",
-                "libqmi_encdec",
-                "libsnsapi",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libssc.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
-                "liblog",
-                "libsensorslog",
-                "libcutils",
-                "libutils",
-                "libqmi_common_so",
-                "libqmi_cci",
-                "libqmi_encdec",
-                "libsnsapi",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libssc_default_listener",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libssc_default_listener.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libsdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libssc_default_listener.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libsdsprpc",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -4176,77 +3721,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "sensors.ssc",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/sensors.ssc.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
-                "liblog",
-                "libsnsapi",
-                "libssc",
-                "libsnsdiaglog",
-                "libutils",
-                "libcutils",
-                "libsns_fastRPC_util",
-                "libsensorslog",
-                "libhardware",
-                "libhidltransport",
-                "libhidlbase",
-                "android.hardware.sensors@2.0",
-                "android.hardware.sensors@2.0-ScopedWakelock",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@2.0",
-                "vendor.qti.hardware.display.mapper@3.0",
-                "vendor.qti.hardware.display.mapper@1.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/sensors.ssc.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
-                "liblog",
-                "libsnsapi",
-                "libssc",
-                "libsnsdiaglog",
-                "libutils",
-                "libcutils",
-                "libsns_fastRPC_util",
-                "libsensorslog",
-                "libhardware",
-                "libhidltransport",
-                "libhidlbase",
-                "android.hardware.sensors@2.0",
-                "android.hardware.sensors@2.0-ScopedWakelock",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@2.0",
-                "vendor.qti.hardware.display.mapper@3.0",
-                "vendor.qti.hardware.display.mapper@1.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.camera.device@1.0",
     owner: "lenovo",
     strip: {
@@ -4323,49 +3797,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.sensorscalibrate@1.0",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -5014,6 +4445,40 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.sensorscalibrate@1.0-impl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "libutils",
+                "liblog",
+                "libcutils",
+                "libhardware",
+                "libbase",
+                "vendor.qti.hardware.sensorscalibrate@1.0",
+                "libsensorcal",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libMegviiBeautyBody",
     owner: "lenovo",
     strip: {
@@ -5224,6 +4689,62 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsensorcal",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsensorcal.so",
+            ],
+            shared_libs: [
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "liblog",
+                "libssc",
+                "libutils",
+                "libcutils",
+                "libsensorslog",
+                "libsnsapi",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsensorslog",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsensorslog.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsnpe_adsp",
     owner: "lenovo",
     strip: {
@@ -5422,6 +4943,209 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsns_fastRPC_util",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsns_fastRPC_util.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsns_low_lat_stream_stub",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsns_low_lat_stream_stub.so",
+            ],
+            shared_libs: [
+                "libsns_fastRPC_util",
+                "liblog",
+                "libc",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsns_registry_skel",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsns_registry_skel.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsnsapi",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsnsapi.so",
+            ],
+            shared_libs: [
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libcutils",
+                "libutils",
+                "libqmi_common_so",
+                "libqmi_cci",
+                "libqmi_encdec",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsnsdiaglog",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsnsdiaglog.so",
+            ],
+            shared_libs: [
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "liblog",
+                "libdiag",
+                "libsensorslog",
+                "libutils",
+                "libcutils",
+                "libssc",
+                "libsnsapi",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libssc",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libssc.so",
+            ],
+            shared_libs: [
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "liblog",
+                "libsensorslog",
+                "libcutils",
+                "libutils",
+                "libqmi_common_so",
+                "libqmi_cci",
+                "libqmi_encdec",
+                "libsnsapi",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libssc_default_listener",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libssc_default_listener.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libsdsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsymphony-cpu",
     owner: "lenovo",
     strip: {
@@ -5493,6 +5217,76 @@ cc_prebuilt_library_shared {
                 "libvndksupport",
                 "libhidlbase-v32",
                 "libhidltransport",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "sensors.ssc",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/sensors.ssc.so",
+            ],
+            shared_libs: [
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "liblog",
+                "libsnsapi",
+                "libssc",
+                "libsnsdiaglog",
+                "libutils",
+                "libcutils",
+                "libsns_fastRPC_util",
+                "libsensorslog",
+                "libhardware",
+                "libhidltransport",
+                "libhidlbase",
+                "android.hardware.sensors@2.0",
+                "android.hardware.sensors@2.0-ScopedWakelock",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.mapper@2.0",
+                "vendor.qti.hardware.display.mapper@3.0",
+                "vendor.qti.hardware.display.mapper@1.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.sensorscalibrate@1.0",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
                 "libm",
                 "libdl",
             ],
