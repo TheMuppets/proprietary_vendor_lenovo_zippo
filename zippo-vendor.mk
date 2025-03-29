@@ -315,7 +315,6 @@ PRODUCT_PACKAGES += \
     libqcreverb \
     libqcvirt \
     libshoebox \
-    libswdap \
     vendor.qti.hardware.audiohalext@1.0 \
     com.megvii.node.previewbeautyX \
     com.pandora.node.watermark \
