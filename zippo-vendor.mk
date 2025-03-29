@@ -194,7 +194,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     audio.primary.msmnile \
-    vendor.qti.hardware.fm@1.0-impl \
     libclimax \
     vendor.qti.hardware.fingerprint@1.0 \
     vendor.qti.hardware.audiohalext@1.0-impl \
@@ -275,6 +274,7 @@ PRODUCT_PACKAGES += \
     com.qti.chi.override \
     fingerprint.goodix_fod.msmnile \
     sensors.hal.tof \
+    vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     libMegviiBeautyBody \
     libSNPE \
