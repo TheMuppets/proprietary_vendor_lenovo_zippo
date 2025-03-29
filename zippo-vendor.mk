@@ -193,9 +193,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/zippo/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
-    audio.primary.msmnile \
-    libclimax \
     vendor.qti.hardware.fingerprint@1.0 \
+    audio.primary.msmnile \
     vendor.qti.hardware.audiohalext@1.0-impl \
     liba2dpoffload \
     libacdb-fts \
@@ -206,6 +205,7 @@ PRODUCT_PACKAGES += \
     libaudcal \
     libaudio_log_utils \
     libaudioconfigstore \
+    libclimax \
     libqtigef \
     libssrec \
     libasphere \
