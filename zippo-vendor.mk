@@ -274,7 +274,6 @@ PRODUCT_PACKAGES += \
     com.qti.chi.override \
     fingerprint.goodix_fod.msmnile \
     sensors.hal.tof \
-    vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     libMegviiBeautyBody \
     libSNPE \
@@ -324,10 +323,6 @@ PRODUCT_PACKAGES += \
     sensors.ssc \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
-    fm_helium \
-    libfm-hci \
-    vendor.qti.hardware.fm@1.0 \
-    fm_qsoc_patches \
     android.hardware.camera.provider@2.4-service_64 \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
     sensors.qti \
