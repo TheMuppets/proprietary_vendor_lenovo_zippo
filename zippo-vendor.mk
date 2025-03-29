@@ -267,7 +267,6 @@ PRODUCT_PACKAGES += \
     sensors.hal.tof \
     vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
-    libadsprpc \
     libarcsoft_dualcam_refocus \
     libcamera_nn_stub \
     libcamxfdalgov7 \
