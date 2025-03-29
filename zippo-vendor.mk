@@ -174,20 +174,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/zippo/proprietary/vendor/firmware/goodix_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware.bin \
     vendor/lenovo/zippo/proprietary/vendor/firmware/mono.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/mono.cnt \
     vendor/lenovo/zippo/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
-    vendor/lenovo/zippo/proprietary/vendor/lib/camera/com.qti.sensormodule.ofilm_ov02c20.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ofilm_ov02c20.bin \
-    vendor/lenovo/zippo/proprietary/vendor/lib/camera/com.qti.sensormodule.ofilm_ov16885.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ofilm_ov16885.bin \
-    vendor/lenovo/zippo/proprietary/vendor/lib/camera/com.qti.sensormodule.ofilm_ov8856.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ofilm_ov8856.bin \
-    vendor/lenovo/zippo/proprietary/vendor/lib/camera/com.qti.sensormodule.ofilm_s5kgd1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ofilm_s5kgd1.bin \
-    vendor/lenovo/zippo/proprietary/vendor/lib/camera/com.qti.sensormodule.ofilm_s5kgm1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ofilm_s5kgm1.bin \
-    vendor/lenovo/zippo/proprietary/vendor/lib/camera/com.qti.tuned.ofilm_ov02c20.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ofilm_ov02c20.bin \
-    vendor/lenovo/zippo/proprietary/vendor/lib/camera/com.qti.tuned.ofilm_ov16885.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ofilm_ov16885.bin \
-    vendor/lenovo/zippo/proprietary/vendor/lib/camera/com.qti.tuned.ofilm_ov8856.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ofilm_ov8856.bin \
-    vendor/lenovo/zippo/proprietary/vendor/lib/camera/com.qti.tuned.ofilm_s5kgd1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ofilm_s5kgd1.bin \
-    vendor/lenovo/zippo/proprietary/vendor/lib/camera/com.qti.tuned.ofilm_s5kgm1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ofilm_s5kgm1.bin \
-    vendor/lenovo/zippo/proprietary/vendor/lib/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreview.bin \
-    vendor/lenovo/zippo/proprietary/vendor/lib/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreviewlite.bin \
-    vendor/lenovo/zippo/proprietary/vendor/lib/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideo.bin \
-    vendor/lenovo/zippo/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
     vendor/lenovo/zippo/proprietary/vendor/lib64/camera/com.qti.sensormodule.ofilm_ov02c20.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.ofilm_ov02c20.bin \
     vendor/lenovo/zippo/proprietary/vendor/lib64/camera/com.qti.sensormodule.ofilm_ov16885.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.ofilm_ov16885.bin \
     vendor/lenovo/zippo/proprietary/vendor/lib64/camera/com.qti.sensormodule.ofilm_ov8856.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.ofilm_ov8856.bin \
@@ -207,6 +193,28 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/zippo/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
+    audio.primary.msmnile \
+    vendor.qti.hardware.fm@1.0-impl \
+    libclimax \
+    vendor.qti.hardware.fingerprint@1.0 \
+    vendor.qti.hardware.audiohalext@1.0-impl \
+    liba2dpoffload \
+    libacdb-fts \
+    libacdbloader \
+    libacdbrtac \
+    libadiertac \
+    libadm \
+    libaudcal \
+    libaudio_log_utils \
+    libaudioconfigstore \
+    libqtigef \
+    libssrec \
+    libasphere \
+    libqcbassboost \
+    libqcreverb \
+    libqcvirt \
+    libshoebox \
+    vendor.qti.hardware.audiohalext@1.0 \
     android.hardware.camera.provider@2.4-external \
     android.hardware.camera.provider@2.4-legacy \
     camera.device@1.0-impl \
@@ -225,6 +233,8 @@ PRODUCT_PACKAGES += \
     com.arcsoft.node.capturebokeh \
     com.arcsoft.node.realtimebokeh \
     com.arcsoft.node.smoothtransition \
+    com.megvii.node.previewbeautyX \
+    com.pandora.node.watermark \
     com.qti.camx.chiiqutils \
     com.qti.eisv2 \
     com.qti.eisv3 \
@@ -261,12 +271,16 @@ PRODUCT_PACKAGES += \
     com.qtistatic.stats.pdlib \
     libdepthmapwrapper \
     android.hardware.camera.provider@2.4-impl \
-    audio.primary.msmnile \
     camera.qcom \
     com.qti.chi.override \
+    fingerprint.goodix_fod.msmnile \
     sensors.hal.tof \
-    vendor.qti.hardware.fm@1.0-impl \
+    vendor.qti.hardware.sensorscalibrate@1.0-impl \
+    libMegviiBeautyBody \
+    libSNPE \
+    libSNPE_G \
     libarcsoft_dualcam_refocus \
+    libc++_shared \
     libcamera_nn_stub \
     libcamxfdalgov7 \
     libcamxfdalgov8 \
@@ -274,48 +288,14 @@ PRODUCT_PACKAGES += \
     libcamxstatscore \
     libcamxswprocessalgo \
     libcamxtintlessalgo \
-    libclimax \
     libcom.qti.chinodeutils \
     libdualcam_optical_zoom_control \
     libdualcam_video_optical_zoom \
-    libmpbase \
-    libsns_device_mode_stub \
-    libswregistrationalgo \
-    libvl53l1_daemon \
-    libwatermarkutils \
-    vendor.qti.hardware.camera.device@1.0 \
-    vendor.qti.hardware.fingerprint@1.0 \
-    vendor.qti.hardware.audiohalext@1.0-impl \
-    liba2dpoffload \
-    libacdb-fts \
-    libacdbloader \
-    libacdbrtac \
-    libadiertac \
-    libadm \
-    libaudcal \
-    libaudio_log_utils \
-    libaudioconfigstore \
-    libqtigef \
-    libssrec \
-    libvideoutils \
-    libasphere \
-    libqcbassboost \
-    libqcreverb \
-    libqcvirt \
-    libshoebox \
-    vendor.qti.hardware.audiohalext@1.0 \
-    com.megvii.node.previewbeautyX \
-    com.pandora.node.watermark \
-    fingerprint.goodix_fod.msmnile \
-    vendor.qti.hardware.sensorscalibrate@1.0-impl \
-    libMegviiBeautyBody \
-    libSNPE \
-    libSNPE_G \
-    libc++_shared \
     libgf_hal \
     libgnustl_shared \
     libmegface \
     libmegskeleton \
+    libmpbase \
     libsensorcal \
     libsensorslog \
     libsnpe_adsp \
@@ -327,6 +307,7 @@ PRODUCT_PACKAGES += \
     libsnpe_dsp_v65_domains_v2_skel \
     libsnpe_dsp_v66_domains_v2_skel \
     libsnpe_loader \
+    libsns_device_mode_stub \
     libsns_fastRPC_util \
     libsns_low_lat_stream_stub \
     libsns_registry_skel \
@@ -334,10 +315,14 @@ PRODUCT_PACKAGES += \
     libsnsdiaglog \
     libssc \
     libssc_default_listener \
+    libswregistrationalgo \
     libsymphony-cpu \
     libsymphonypower \
     libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
+    libvl53l1_daemon \
+    libwatermarkutils \
     sensors.ssc \
+    vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
     fm_helium \
     libfm-hci \
