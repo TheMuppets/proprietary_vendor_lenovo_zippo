@@ -321,7 +321,6 @@ PRODUCT_PACKAGES += \
     libvl53l1_daemon \
     libwatermarkutils \
     sensors.ssc \
-    vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
     android.hardware.camera.provider@2.4-service_64 \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
