@@ -205,8 +205,17 @@ PRODUCT_PACKAGES += \
     libaudcal \
     libaudio_log_utils \
     libaudioconfigstore \
+    libaudioparsers \
+    libbatterylistener \
     libclimax \
+    libcomprcapture \
+    libexthwplugin \
+    libhdmiedid \
+    libhdmipassthru \
+    libhfp \
     libqtigef \
+    libsndmonitor \
+    libspkrprot \
     libssrec \
     libasphere \
     libqcbassboost \
