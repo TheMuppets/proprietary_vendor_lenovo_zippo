@@ -284,7 +284,6 @@ PRODUCT_PACKAGES += \
     fingerprint.goodix_fod.msmnile \
     sensors.hal.tof \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
-    libMegviiBeautyBody \
     libSNPE \
     libSNPE_G \
     libarcsoft_dualcam_refocus \
@@ -301,7 +300,6 @@ PRODUCT_PACKAGES += \
     libdualcam_video_optical_zoom \
     libgf_hal \
     libgnustl_shared \
-    libmegskeleton \
     libmpbase \
     libsensorcal \
     libsensorslog \
