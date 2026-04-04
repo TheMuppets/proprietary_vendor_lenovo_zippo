@@ -2904,36 +2904,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libMegviiBeautyBody",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libMegviiBeautyBody.so",
-            ],
-            shared_libs: [
-                "libgnustl_shared",
-                "libmegskeleton",
-                "libmegface",
-                "libEGL",
-                "libGLESv3",
-                "liblog",
-                "libnativewindow",
-                "libm",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libSNPE",
     owner: "lenovo",
     strip: {
@@ -3350,32 +3320,6 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libc",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmegskeleton",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmegskeleton.so",
-            ],
-            shared_libs: [
-                "libmegface",
-                "liblog",
-                "libdl",
-                "libz",
-                "libm",
-                "libc",
             ],
         },
     },
